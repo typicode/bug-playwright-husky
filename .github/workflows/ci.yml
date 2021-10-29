@@ -12,7 +12,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: mcr.microsoft.com/playwright:focal
+    container: node:latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci --no-optional --no-audit --prefer-offline --progress=false
+      - run: npm ci --no-optional --no-audit --prefer-offline --progress=false --ignore-scripts
