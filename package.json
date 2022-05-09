@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Th3S4mur41/bug-playwright-husky#readme",
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.1"
   }
 }
