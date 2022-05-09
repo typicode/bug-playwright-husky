@@ -18,3 +18,6 @@ jobs:
       - env: 
           HUSKY: 0
         run: node -e "console.log(typeof process.env.HUSKY, process.env.HUSKY, process.env.HUSKY === '0')"
+      - env: 
+          HUSKY: 0
+        run: npm ci --no-optional --no-audit --prefer-offline --progress=fals
