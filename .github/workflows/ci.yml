@@ -12,7 +12,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: node:latest
+    container: node:lts
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci --no-optional --no-audit --prefer-offline --progress=false --ignore-scripts
+      - env: 
+          HUSKY: 0
+        run: npm ci --no-optional --no-audit --prefer-offline --progress=false --ignore-scripts
